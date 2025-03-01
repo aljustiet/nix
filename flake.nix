@@ -4,9 +4,9 @@
     };
 
     outputs = { self, nixpkgs, ... }: {
-        nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
+        nixosConfigurations.thinkpad-nixos = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
-            modules = [ ./thinkpad-configuration.nix ];
+            modules = [ ./thinkpad-nixos-configuration.nix ];
         };
     };
 }
