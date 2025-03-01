@@ -4,11 +4,13 @@
   imports =
     [
       ./thinkpad-nixos-hardware.nix
+      ./thinkpad-nixos-filesystems.nix
     ];
 
-  boot.loader.limine.enable = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot";
 
   networking.hostName = "thinkpad-nixos";
   networking.extraHosts = ''
@@ -46,7 +48,7 @@
     neovim
     wget
     git
-    hyprland
+    wl-clipboard
     waybar
     fuzzel
     rofi-wayland
@@ -66,6 +68,4 @@
   };
 
   services.printing.enable = true;
-
-  system.stateVersion = "24.05";
 }
