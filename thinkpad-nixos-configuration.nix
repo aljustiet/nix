@@ -9,6 +9,12 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  services.openssh.enable = true;
+  services.openssh.settings = {
+    PermitRootLogin = "yes";
+    PasswordAuthentication = true;
+  };
+
   networking.hostName = "thinkpad-nixos";
   networking.extraHosts = ''
     127.0.1.1 thinkpad-nixos.localdomain thinkpad-nixos
@@ -53,6 +59,10 @@
     rofi-wayland
     foot
     librewolf
+    fastfetch
+    terminus_font
+    openssh
+    fd
   ];
 
   programs.zsh.enable = true;
