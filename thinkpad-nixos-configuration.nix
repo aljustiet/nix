@@ -9,9 +9,6 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
   networking.hostName = "thinkpad-nixos";
   networking.extraHosts = ''
     127.0.1.1 thinkpad-nixos.localdomain thinkpad-nixos
@@ -20,19 +17,21 @@
 
   time.timeZone = "Asia/Tashkent";
 
-  i18n.defaultLocale = "C.UTF-8";
+  i18n.defaultLocale = "en_US.UTF-8";
   i18n.supportedLocales = [
-    "en_US.UTF-8"
-    "ja_JP.UTF-8"
-    "ru_RU.UTF-8"
+    "en_US.UTF-8/UTF-8"
+    "ja_JP.UTF-8/UTF-8"
+    "ru_RU.UTF-8/UTF-8"
   ];
+
   console = {
     font = "ter-932n";
-    keyMap = "us";
+    keyMap = lib.mkDefault "us";
     useXkbConfig = true;
   };
 
   programs.hyprland.enable = true;
+
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
@@ -56,6 +55,7 @@
     librewolf
   ];
 
+  programs.zsh.enable = true;
   users.users.aljustiet = {
     isNormalUser = true;
     extraGroups = [ "wheel" "network" "audio" "video"];
@@ -68,4 +68,6 @@
   };
 
   services.printing.enable = true;
+
+  system.stateVersion = "25.05";
 }

@@ -25,7 +25,7 @@
     options = [ "compress=zstd:1" "subvol=@cache-nixos" "noatime" "rw" "ssd" "space_cache=v2" ];
   };
 
-  fileSystems."/nix-store" = {
+  fileSystems."/nix/store" = {
     device = "/dev/disk/by-uuid/59a3572b-7420-48d0-852d-88f9ccd3db71";
     fsType = "btrfs";
     options = [ "compress=zstd:1" "subvol=@nix-store-nixos" "noatime" "rw" "ssd" "space_cache=v2" ];
@@ -34,7 +34,12 @@
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/13F9-09A9";
     fsType = "vfat";
-    options = [ "rw" "noatime" "fmask=0022" "dmask=0022" "codepage=437" "iocharset=ascii" "shortname=mixed" "utf8" "errors=remount-ro" ];
+    options = [ 
+      "rw" 
+      "noatime" 
+      "fmask=0077"  # Stricter permissions (readable only by root)
+      "dmask=0077"
+    ];
   };
 
   fileSystems."/mnt/hdd" = {
