@@ -13,6 +13,7 @@
                         "zswap.enabled=1"
                         "rw"
                         "rootfstype=btrfs"
+			"consolefont=ter-932n"
                       ];
 
   boot.initrd.availableKernelModules = [ "nvme" "btrfs" "dm-crypt" "usbhid" "usb_storage" ];

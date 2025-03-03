@@ -8,6 +8,7 @@
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
 
   services.openssh.enable = true;
   services.openssh.settings = {
@@ -30,13 +31,25 @@
     "ru_RU.UTF-8/UTF-8"
   ];
 
+#  console = {
+#    font = "ter-932n";
+#    keyMap = lib.mkDefault "us";
+#    useXkbConfig = true;
+#  };
+#
   console = {
     font = "ter-932n";
     keyMap = lib.mkDefault "us";
     useXkbConfig = true;
+    packages = [ pkgs.terminus_font ];
   };
+  
 
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    package = pkgs.hyprland;
+  };
+  
 
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
@@ -60,17 +73,49 @@
     foot
     librewolf
     fastfetch
-    terminus_font
     openssh
     fd
+    doas
+    htop
+    btop
+    tree
+    tealdeer
+    kitty
+    ripgrep
+    tokei
+    kanata-with-cmd
+    obsidian
+    ayugram-desktop
+    grim
+    slurp
+    gdu
+    dust
+    texlivePackages.gofonts
+    tidal-hifi
+    bluetui
+    keepassxc
+    file
   ];
 
+  fonts.fonts = with pkgs; [
+      texlivePackages.gofonts
+  ];
+  
+
   programs.zsh.enable = true;
+
+  users.groups.aljustiet = {
+    gid = 1000;
+  };
+  
   users.users.aljustiet = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "network" "audio" "video"];
+    group = "aljustiet";
+    uid = 1000;
+    extraGroups = [ "wheel" "network" "audio" "video" ];
     shell = pkgs.zsh;
   };
+  
 
   programs.gnupg.agent = {
     enable = true;
@@ -79,5 +124,13 @@
 
   services.printing.enable = true;
 
+  security.doas.enable = true;
+  security.sudo.enable = false;
+  security.doas.extraRules = [{
+    users = ["aljustiet"];
+    keepEnv = true; 
+    persist = true;
+  }];
+  
   system.stateVersion = "25.05";
 }
