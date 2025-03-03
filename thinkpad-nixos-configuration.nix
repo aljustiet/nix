@@ -11,10 +11,6 @@
   nixpkgs.config.allowUnfree = true;
 
   services.openssh.enable = true;
-  services.openssh.settings = {
-    PermitRootLogin = "yes";
-    PasswordAuthentication = true;
-  };
 
   networking.hostName = "thinkpad-nixos";
   networking.extraHosts = ''
