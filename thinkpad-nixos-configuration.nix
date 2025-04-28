@@ -7,6 +7,16 @@
       ./thinkpad-nixos-filesystems.nix
     ];
 
+  services.flatpak.enable = true;
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
 
@@ -77,25 +87,46 @@
     tree
     tealdeer
     kitty
+    bat
     ripgrep
     tokei
     kanata-with-cmd
     obsidian
     ayugram-desktop
+    fd
     grim
     slurp
     gdu
     dust
-    texlivePackages.gofonts
     tidal-hifi
     bluetui
     keepassxc
     file
+    ripgrep
+    gcc
+    lsd
+    acpi
+    gammastep
+    geoclue2
+    zoxide
+    fzf
+    uwsm
+    leetcode-cli
+    tutanota-desktop
+    font-manager
+    zathura
+    cnijfilter2
+    simple-scan
   ];
 
-  fonts.packages = with pkgs; [
+  fonts = {
+    enableDefaultPackages = false;
+    packages = with pkgs; [
       texlivePackages.gofonts
-  ];
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.go-mono
+    ];
+  };
   
 
   programs.zsh.enable = true;

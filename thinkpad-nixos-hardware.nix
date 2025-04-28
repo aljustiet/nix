@@ -7,7 +7,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelParams = [ "cryptdevice=PARTUUID=0662b013-d7cc-4a18-a207-d4eb49fd4068:luks"
+  boot.kernelParams = [ "cryptdevice=PARTUUID=de12c19e-6319-45fc-a895-427d496df476:luks"
                         "root=/dev/vg_group/btrfs"
                         "rootflags=subvol=@nixos"
                         "zswap.enabled=1"
@@ -19,7 +19,7 @@
   boot.initrd.availableKernelModules = [ "nvme" "btrfs" "dm-crypt" "usbhid" "usb_storage" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.initrd.luks.devices.luks = {
-    device = "/dev/disk/by-partuuid/0662b013-d7cc-4a18-a207-d4eb49fd4068";
+    device = "/dev/disk/by-partuuid/de12c19e-6319-45fc-a895-427d496df476";
     preLVM = true;
   };
   boot.initrd.services.lvm.enable = true;
