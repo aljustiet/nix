@@ -69,6 +69,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    niri
     neovim
     wget
     git
