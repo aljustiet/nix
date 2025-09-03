@@ -1,4 +1,4 @@
-{ inputs, config, lib, pkgs, ... }:
+{ inputs, zen-browser, config, lib, pkgs, ... }:
 
 {
   imports =
@@ -63,17 +63,11 @@
     smem
     yazi
     cliphist
+    inputs.zen-browser.packages."${system}".default
+    bibata-cursors
+    vnstat
+    noto-fonts-cjk-sans
   ];
-
-  services.flatpak.enable = true;
-  systemd.services.flatpak-repo = {
-    wantedBy = [ "multi-user.target" ];
-    path = [ pkgs.flatpak ];
-    script = ''
-      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    '';
-  };
-
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
@@ -108,13 +102,6 @@
     packages = [ pkgs.terminus_font ];
   };
   
-
-  programs.hyprland = {
-    enable = true;
-    package = pkgs.hyprland;
-  };
-  
-
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
@@ -137,6 +124,9 @@
     ];
   };
 
+  programs.zsh.enable = true;
+  programs.fish.enable = true;
+
   users.users.root = {
     shell = pkgs.fish;
   };
@@ -145,9 +135,6 @@
     gid = 1000;
   };
 
-  programs.zsh.enable = true;
-  programs.fish.enable = true;
-  
   users.users.aljustiet = {
     isNormalUser = true;
     group = "aljustiet";
@@ -155,7 +142,6 @@
     extraGroups = [ "wheel" "network" "audio" "video" "input" "uinput" ];
     shell = pkgs.zsh;
   };
-  
 
   programs.gnupg.agent = {
     enable = true;
@@ -169,7 +155,7 @@
   security.doas.extraRules = [{
     users = ["aljustiet"];
     keepEnv = true; 
-    persist = true;
+    noPass = true;
   }];
   
   system.stateVersion = "25.05";

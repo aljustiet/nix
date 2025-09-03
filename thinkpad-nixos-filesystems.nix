@@ -42,20 +42,20 @@
     ];
   };
 
-  fileSystems."/mnt/hdd" = {
-    device = "/dev/disk/by-uuid/1061-30F4";
-    fsType = "exfat";
-    options = [ "rw" "noatime" "uid=1000" "gid=1000" "iocharset=utf8" "nofail" ];
-  };
+  # fileSystems."/mnt/hdd" = {
+  #   device = "/dev/disk/by-uuid/1061-30F4";
+  #   fsType = "exfat";
+  #   options = [ "rw" "noatime" "uid=1000" "gid=1000" "iocharset=utf8" "nofail" ];
+  # };
 
-  fileSystems."/mnt/usb" = {
-    device = "/dev/disk/by-uuid/725D-EAFA";
-    fsType = "exfat";
-    options = [ "rw" "noatime" "uid=1000" "gid=1000" "fmask=0022" "dmask=0022" "iocharset=utf8" "errors=remount-ro" "nofail" ];
-  };
+  # fileSystems."/mnt/usb" = {
+  #   device = "/dev/disk/by-uuid/725D-EAFA";
+  #   fsType = "exfat";
+  #   options = [ "rw" "noatime" "uid=1000" "gid=1000" "fmask=0022" "dmask=0022" "iocharset=utf8" "errors=remount-ro" "nofail" ];
+  # };
 
   swapDevices = [
-    { device = "/dev/disk/by-uuid/e0647b73-b396-4821-8c7b-f9b4e329852a"; }
+    { device = "/dev/disk/by-uuid/36d76853-da22-4053-986b-f42d9a931315"; }
   ];
 
   zramSwap.enable = true;
