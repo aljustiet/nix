@@ -67,6 +67,7 @@
     bibata-cursors
     vnstat
     noto-fonts-cjk-sans
+    papirus-icon-theme
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -121,6 +122,7 @@
       texlivePackages.gofonts
       nerd-fonts.jetbrains-mono
       nerd-fonts.go-mono
+      noto-fonts-cjk-sans
     ];
   };
 
