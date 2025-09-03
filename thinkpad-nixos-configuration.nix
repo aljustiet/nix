@@ -68,6 +68,7 @@
     vnstat
     noto-fonts-cjk-sans
     papirus-icon-theme
+    vesktop
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
