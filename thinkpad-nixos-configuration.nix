@@ -14,7 +14,6 @@
     git
     wl-clipboard
     waybar
-    fuzzel
     rofi-wayland
     foot
     librewolf
@@ -30,7 +29,6 @@
     ripgrep
     tokei
     kanata-with-cmd
-    obsidian
     ayugram-desktop
     fd
     grim
@@ -49,7 +47,6 @@
     geoclue2
     zoxide
     fzf
-    uwsm
     leetcode-cli
     tutanota-desktop
     font-manager
@@ -69,6 +66,12 @@
     noto-fonts-cjk-sans
     papirus-icon-theme
     vesktop
+    noto-fonts-color-emoji
+    pulsemixer
+    xdg-user-dirs
+    libqalculate
+    evtest
+    mullvad-vpn
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -160,6 +163,17 @@
     keepEnv = true; 
     noPass = true;
   }];
+  
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true;
+        FastConnectable = true;
+      };
+    };
+  };
   
   system.stateVersion = "25.05";
 }
