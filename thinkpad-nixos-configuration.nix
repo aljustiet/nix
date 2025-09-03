@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   imports =
@@ -62,7 +62,7 @@
     xwayland-satellite
     smem
     yazi
-    zen-browser.packages."${system}".default
+    cliphist
   ];
 
   services.flatpak.enable = true;
