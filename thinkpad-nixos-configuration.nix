@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -6,6 +6,64 @@
       ./thinkpad-nixos-hardware.nix
       ./thinkpad-nixos-filesystems.nix
     ];
+
+  environment.systemPackages = with pkgs; [
+    niri
+    neovim
+    wget
+    git
+    wl-clipboard
+    waybar
+    fuzzel
+    rofi-wayland
+    foot
+    librewolf
+    fastfetch
+    openssh
+    fd
+    doas
+    htop
+    btop
+    tree
+    tealdeer
+    bat
+    ripgrep
+    tokei
+    kanata-with-cmd
+    obsidian
+    ayugram-desktop
+    fd
+    grim
+    slurp
+    gdu
+    dust
+    tidal-hifi
+    bluetui
+    keepassxc
+    file
+    ripgrep
+    gcc
+    lsd
+    acpi
+    gammastep
+    geoclue2
+    zoxide
+    fzf
+    uwsm
+    leetcode-cli
+    tutanota-desktop
+    font-manager
+    zathura
+    cnijfilter2
+    simple-scan
+    zsh
+    fish
+    brave
+    xwayland-satellite
+    smem
+    yazi
+    zen-browser.packages."${system}".default
+  ];
 
   services.flatpak.enable = true;
   systemd.services.flatpak-repo = {
@@ -68,57 +126,7 @@
     jack.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    niri
-    neovim
-    wget
-    git
-    wl-clipboard
-    waybar
-    fuzzel
-    rofi-wayland
-    foot
-    librewolf
-    fastfetch
-    openssh
-    fd
-    doas
-    htop
-    btop
-    tree
-    tealdeer
-    kitty
-    bat
-    ripgrep
-    tokei
-    kanata-with-cmd
-    obsidian
-    ayugram-desktop
-    fd
-    grim
-    slurp
-    gdu
-    dust
-    tidal-hifi
-    bluetui
-    keepassxc
-    file
-    ripgrep
-    gcc
-    lsd
-    acpi
-    gammastep
-    geoclue2
-    zoxide
-    fzf
-    uwsm
-    leetcode-cli
-    tutanota-desktop
-    font-manager
-    zathura
-    cnijfilter2
-    simple-scan
-  ];
+  
 
   fonts = {
     enableDefaultPackages = false;
@@ -128,19 +136,23 @@
       nerd-fonts.go-mono
     ];
   };
-  
 
-  programs.zsh.enable = true;
+  users.users.root = {
+    shell = pkgs.fish;
+  };
 
   users.groups.aljustiet = {
     gid = 1000;
   };
+
+  programs.zsh.enable = true;
+  programs.fish.enable = true;
   
   users.users.aljustiet = {
     isNormalUser = true;
     group = "aljustiet";
     uid = 1000;
-    extraGroups = [ "wheel" "network" "audio" "video" ];
+    extraGroups = [ "wheel" "network" "audio" "video" "input" "uinput" ];
     shell = pkgs.zsh;
   };
   
