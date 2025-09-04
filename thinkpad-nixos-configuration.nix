@@ -72,6 +72,12 @@
     libqalculate
     evtest
     mullvad-vpn
+    scrcpy
+    android-tools
+    dash
+    komikku
+    lsof
+    topgrade
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -174,6 +180,8 @@
       };
     };
   };
+
+  services.mullvad-vpn.enable = true;
   
   system.stateVersion = "25.05";
 }
