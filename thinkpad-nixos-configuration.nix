@@ -81,6 +81,7 @@
     dnsutils
     dig
     nwg-look
+    gruvbox-gtk-theme
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
