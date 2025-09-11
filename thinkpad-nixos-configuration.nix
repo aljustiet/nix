@@ -189,7 +189,6 @@
 
   programs.dconf.enable = true;
 
-  boot.initrd.kernelModules=["amdgpu"];
 
   system.stateVersion = "25.05";
 }
