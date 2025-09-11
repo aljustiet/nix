@@ -96,6 +96,7 @@
     poppler-utils
     epub2txt2
     ddcutil
+    rwedid
     iotop
   ];
 
