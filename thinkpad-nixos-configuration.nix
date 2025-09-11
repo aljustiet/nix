@@ -99,6 +99,7 @@
     rwedid
     iotop
     lm_sensors
+    brightnessctl
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
