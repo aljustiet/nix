@@ -91,6 +91,7 @@
     terminus_font
     e-imzo
     e-imzo-manager
+    xh
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
