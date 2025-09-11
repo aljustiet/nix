@@ -1,4 +1,4 @@
-{ inputs, zen-browser, config, lib, pkgs, ... }:
+{ inputs, config, lib, pkgs, ... }:
 
 {
   imports =
@@ -35,7 +35,6 @@
     slurp
     gdu
     dust
-    tidal-hifi
     bluetui
     keepassxc
     file
@@ -82,6 +81,9 @@
     dig
     nwg-look
     gruvbox-gtk-theme
+    gruvbox-kvantum
+    libsForQt5.qt5ct
+    qt6ct
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -188,6 +190,6 @@
   services.mullvad-vpn.enable = true;
 
   programs.dconf.enable = true;
-  
+
   system.stateVersion = "25.05";
 }
