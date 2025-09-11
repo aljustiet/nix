@@ -89,6 +89,8 @@
     wine
     bottles-unwrapped
     terminus_font
+    e-imzo
+    e-imzo-manager
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
