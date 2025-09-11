@@ -186,6 +186,8 @@
   };
 
   services.mullvad-vpn.enable = true;
+
+  programs.dconf.enable = true;
   
   system.stateVersion = "25.05";
 }
