@@ -84,6 +84,7 @@
     gruvbox-kvantum
     libsForQt5.qt5ct
     qt6ct
+    solaar
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
