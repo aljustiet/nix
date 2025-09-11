@@ -85,6 +85,10 @@
     libsForQt5.qt5ct
     qt6ct
     solaar
+    logitech-udev-rules
+    wine
+    bottles-unwrapped
+    terminus_font
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -107,16 +111,9 @@
     "ru_RU.UTF-8/UTF-8"
   ];
 
-#  console = {
-#    font = "ter-932n";
-#    keyMap = lib.mkDefault "us";
-#    useXkbConfig = true;
-#  };
-#
   console = {
-    font = "ter-932n";
-    keyMap = lib.mkDefault "us";
-    useXkbConfig = true;
+    earlySetup = true;
+    font = "ter-v32n";
     packages = [ pkgs.terminus_font ];
   };
   
@@ -191,6 +188,8 @@
   services.mullvad-vpn.enable = true;
 
   programs.dconf.enable = true;
+
+  boot.initrd.kernelModules=["amdgpu"];
 
   system.stateVersion = "25.05";
 }
