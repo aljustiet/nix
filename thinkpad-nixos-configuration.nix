@@ -199,6 +199,7 @@
 
   programs.dconf.enable = true;
 
+  hardware.i2c.enable = true;
 
   system.stateVersion = "25.05";
 }
