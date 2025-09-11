@@ -95,6 +95,7 @@
     go
     poppler-utils
     epub2txt2
+    ddcutil
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
