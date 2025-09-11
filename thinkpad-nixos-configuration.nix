@@ -78,6 +78,9 @@
     komikku
     lsof
     topgrade
+    dnsutils
+    dig
+    nwg-look
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
