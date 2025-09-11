@@ -13,6 +13,12 @@
     options = [ "compress=zstd:1" "subvol=@home-nixos" "noatime" "rw" "ssd" "space_cache=v2" ];
   };
 
+  fileSystems."/home/aljustiet/btrfs" = {
+    device = "/dev/disk/by-uuid/59a3572b-7420-48d0-852d-88f9ccd3db71";
+    fsType = "btrfs";
+    options = [ "compress=zstd:1" "subvolid=5" "noatime" "rw" "ssd" "space_cache=v2" ];
+  };
+
   fileSystems."/var/log" = {
     device = "/dev/disk/by-uuid/59a3572b-7420-48d0-852d-88f9ccd3db71";
     fsType = "btrfs";
