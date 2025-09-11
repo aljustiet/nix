@@ -92,6 +92,7 @@
     e-imzo
     e-imzo-manager
     xh
+    go
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
