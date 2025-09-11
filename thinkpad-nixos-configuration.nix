@@ -93,6 +93,7 @@
     e-imzo-manager
     xh
     go
+    poppler-utils
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
