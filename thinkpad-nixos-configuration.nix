@@ -10,7 +10,6 @@
   environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
 
   environment.systemPackages = with pkgs; [
-    niri
     neovim
     wget
     git
@@ -100,12 +99,15 @@
     iotop
     lm_sensors
     brightnessctl
+    fractal
   ];
+
+  programs.niri.enable = true;
+  security.polkit.enable = true;
+  services.gnome.gnome-keyring.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
-
-  services.openssh.enable = true;
 
   networking.hostName = "thinkpad-nixos";
   networking.extraHosts = ''
@@ -171,7 +173,6 @@
 
   programs.gnupg.agent = {
     enable = true;
-    enableSSHSupport = true;
   };
 
   services.printing.enable = true;
