@@ -102,6 +102,8 @@
     fractal
     kdePackages.kdenlive
     shotcut
+    unzip
+    swayimg
   ];
 
   programs.niri.enable = true;
