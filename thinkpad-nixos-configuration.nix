@@ -7,6 +7,8 @@
       ./thinkpad-nixos-filesystems.nix
     ];
 
+  environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
+
   environment.systemPackages = with pkgs; [
     niri
     neovim
