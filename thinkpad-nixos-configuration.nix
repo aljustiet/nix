@@ -100,7 +100,7 @@
     lm_sensors
     brightnessctl
     fractal
-    kdenlive
+    kdePackages.kdenlive
     shotcut
     davinci-resolve
   ];
