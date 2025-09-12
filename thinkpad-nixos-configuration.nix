@@ -100,6 +100,9 @@
     lm_sensors
     brightnessctl
     fractal
+    kdenlive
+    shotcut
+    davinci-resolve
   ];
 
   programs.niri.enable = true;
