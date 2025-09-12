@@ -64,10 +64,8 @@
     inputs.zen-browser.packages."${system}".default
     bibata-cursors
     vnstat
-    noto-fonts-cjk-sans
     papirus-icon-theme
     vesktop
-    noto-fonts-color-emoji
     pulsemixer
     xdg-user-dirs
     libqalculate
@@ -146,10 +144,9 @@
   fonts = {
     enableDefaultPackages = false;
     packages = with pkgs; [
-      texlivePackages.gofonts
       nerd-fonts.jetbrains-mono
-      nerd-fonts.go-mono
       noto-fonts-cjk-sans
+      noto-fonts-color-emoji
     ];
   };
 
