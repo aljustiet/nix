@@ -102,7 +102,6 @@
     fractal
     kdePackages.kdenlive
     shotcut
-    davinci-resolve
   ];
 
   programs.niri.enable = true;
