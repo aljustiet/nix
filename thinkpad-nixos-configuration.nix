@@ -202,5 +202,7 @@
 
   hardware.i2c.enable = true;
 
+  services.auto-cpufreq.enable = true;
+
   system.stateVersion = "25.05";
 }
