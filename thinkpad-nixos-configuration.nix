@@ -102,7 +102,7 @@
     unzip
     swayimg
     nh
-    element-desktop
+    tor-browser
   ];
 
   programs = {
