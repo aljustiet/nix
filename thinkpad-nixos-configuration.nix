@@ -7,6 +7,8 @@
       ./thinkpad-nixos-filesystems.nix
     ];
 
+  system.autoUpgrade.enable = true;
+
   environment.systemPackages = with pkgs; [
     neovim
     wget
@@ -99,6 +101,7 @@
     shotcut
     unzip
     swayimg
+    nh
   ];
 
   programs = {
