@@ -118,13 +118,7 @@
 
   security = {
     polkit.enable = true;
-    doas.enable = true;
-    doas.extraRules = [{
-      users = ["aljustiet"];
-      keepEnv = true; 
-      noPass = true;
-    }];
-    sudo.enable = false;
+    sudo-rs.enable = true;
   };
 
   services = {
