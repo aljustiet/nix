@@ -7,8 +7,6 @@
       ./thinkpad-nixos-filesystems.nix
     ];
 
-  environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
-
   environment.systemPackages = with pkgs; [
     neovim
     wget
@@ -21,7 +19,6 @@
     fastfetch
     openssh
     fd
-    doas
     htop
     btop
     tree
@@ -88,8 +85,6 @@
     wine
     bottles-unwrapped
     terminus_font
-    e-imzo
-    e-imzo-manager
     xh
     go
     poppler-utils
@@ -106,46 +101,85 @@
     swayimg
   ];
 
-  programs.niri.enable = true;
-  security.polkit.enable = true;
-  services.gnome.gnome-keyring.enable = true;
+  programs = {
+    niri.enable = true;
+    zsh.enable = true;
+    fish.enable = true;
+    dconf.enable = true;
+    gnupg.agent.enable = true;
+  };
+
+  security = {
+    polkit.enable = true;
+    doas.enable = true;
+    doas.extraRules = [{
+      users = ["aljustiet"];
+      keepEnv = true; 
+      noPass = true;
+    }];
+    sudo.enable = false;
+  };
+
+  services = {
+    gnome.gnome-keyring.enable = true;
+    printing.enable = true;
+    mullvad-vpn.enable = true;
+    auto-cpufreq = {
+      enable = true;
+    };
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      pulse.enable = true;
+      jack.enable = true;
+    };
+  };
+
+  hardware = {
+    bluetooth = {
+      enable = true;
+      powerOnBoot = true;
+      settings = {
+        General = {
+          Experimental = true;
+          FastConnectable = true;
+        };
+      };
+    };
+    i2c.enable = true;
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
 
-  networking.hostName = "thinkpad-nixos";
-  networking.extraHosts = ''
-    127.0.1.1 thinkpad-nixos.localdomain thinkpad-nixos
-  '';
-  networking.networkmanager.enable = true;
+  networking = {
+    hostName = "thinkpad-nixos";
+    networkmanager.enable = true;
+    extraHosts = ''
+      127.0.1.1 thinkpad-nixos.localdomain thinkpad-nixos
+    '';
+  };
 
   time.timeZone = "Asia/Tashkent";
 
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.supportedLocales = [
-    "en_US.UTF-8/UTF-8"
-    "ja_JP.UTF-8/UTF-8"
-    "ru_RU.UTF-8/UTF-8"
-  ];
+  i18n = {
+    defaultLocale = "en_US.UTF-8";
+    supportedLocales = [
+      "en_US.UTF-8/UTF-8"
+    ];
+    extraLocaleSettings = {
+    };
+  };
 
   console = {
     earlySetup = true;
     font = "ter-v32n";
     packages = [ pkgs.terminus_font ];
   };
-  
+
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
-
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
-
-  
 
   fonts = {
     enableDefaultPackages = false;
@@ -155,9 +189,6 @@
       noto-fonts-color-emoji
     ];
   };
-
-  programs.zsh.enable = true;
-  programs.fish.enable = true;
 
   users.users.root = {
     shell = pkgs.fish;
@@ -173,41 +204,6 @@
     uid = 1000;
     extraGroups = [ "wheel" "network" "audio" "video" "input" "uinput" ];
     shell = pkgs.zsh;
-  };
-
-  programs.gnupg.agent = {
-    enable = true;
-  };
-
-  services.printing.enable = true;
-
-  security.doas.enable = true;
-  security.sudo.enable = false;
-  security.doas.extraRules = [{
-    users = ["aljustiet"];
-    keepEnv = true; 
-    noPass = true;
-  }];
-  
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = true;
-    settings = {
-      General = {
-        Experimental = true;
-        FastConnectable = true;
-      };
-    };
-  };
-
-  services.mullvad-vpn.enable = true;
-
-  programs.dconf.enable = true;
-
-  hardware.i2c.enable = true;
-
-  services.auto-cpufreq = {
-    enable = true;
   };
 
   system.stateVersion = "25.05";
