@@ -128,6 +128,7 @@
     gnome.gnome-keyring.enable = true;
     printing.enable = true;
     mullvad-vpn.enable = true;
+    vnstat.enable = true;
     auto-cpufreq = {
       enable = true;
     };
