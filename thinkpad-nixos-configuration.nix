@@ -103,6 +103,7 @@
     swayimg
     nh
     tor-browser
+    qbittorrent
   ];
 
   programs = {
