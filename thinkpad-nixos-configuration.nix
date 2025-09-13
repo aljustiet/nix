@@ -105,6 +105,7 @@
     tor-browser
     qbittorrent
     swaynotificationcenter
+    gitoxide
   ];
 
   programs = {
