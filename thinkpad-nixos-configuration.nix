@@ -129,22 +129,6 @@
           }];}
       ];
     };
-    #sudo-rs = {
-    #  enable = true;
-    #  execWheelOnly = true;
-    #  extraRules = [
-    #    { groups = [ "sudo" ]; commands = [ "ALL" ]; }
-    #
-    #    { users = [ "aljustiet" ];
-    #    commands = [ { command = "/home/root/secret.sh"; options = [ "SETENV" "NOPASSWD" ]; } ]; }
-    #
-    #    { groups = [ "bar" ]; runAs = "foo";
-    #    commands =
-    #      [ "/home/baz/cmd1.sh hello-sudo"
-    #          { command = ''/home/baz/cmd2.sh ""''; options = [ "SETENV" ]; } ]; }
-    #  ];
-
-    #};
   };
 
   services = {
