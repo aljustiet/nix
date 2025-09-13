@@ -104,6 +104,7 @@
     nh
     tor-browser
     qbittorrent
+    swaynotificationcenter
   ];
 
   programs = {
