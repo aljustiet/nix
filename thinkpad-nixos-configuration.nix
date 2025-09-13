@@ -119,6 +119,16 @@
 
   security = {
     polkit.enable = true;
+    sudo = {
+      execWheelOnly = true;
+      extraRules = [
+        { users = [ "aljustiet" ]; 
+          commands = [{
+            command = "ALL";
+            options = ["SETENV" "NOPASSWD"];
+          }];}
+      ];
+    };
     #sudo-rs = {
     #  enable = true;
     #  execWheelOnly = true;
