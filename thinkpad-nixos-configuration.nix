@@ -102,6 +102,7 @@
     unzip
     swayimg
     nh
+    element-desktop
   ];
 
   programs = {
