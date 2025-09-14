@@ -15,7 +15,7 @@
     git
     wl-clipboard
     waybar
-    rofi-wayland
+    rofi
     foot
     librewolf
     fastfetch
