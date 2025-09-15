@@ -109,7 +109,7 @@
     bemoji
     obs-studio
     traceroute
-    speedtest-rs
+    speedtest-go
   ];
 
   programs = {
