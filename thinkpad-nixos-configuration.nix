@@ -111,6 +111,7 @@
     traceroute
     speedtest-go
     halloy
+    brotli
   ];
 
   programs = {
