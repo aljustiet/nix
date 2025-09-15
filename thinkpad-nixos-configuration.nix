@@ -139,6 +139,7 @@
     printing.enable = true;
     mullvad-vpn.enable = true;
     vnstat.enable = true;
+    flatpak.enable = true;
     auto-cpufreq = {
       enable = true;
     };
