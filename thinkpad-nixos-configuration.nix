@@ -112,6 +112,7 @@
     speedtest-go
     halloy
     brotli
+    jq
   ];
 
   programs = {
