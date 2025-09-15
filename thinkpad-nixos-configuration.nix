@@ -106,7 +106,6 @@
     qbittorrent
     swaynotificationcenter
     gitoxide
-    rustdesk
     bemoji
     obs-studio
   ];
