@@ -108,6 +108,7 @@
     gitoxide
     rustdesk
     bemoji
+    obs-studio
   ];
 
   programs = {
