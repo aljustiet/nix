@@ -107,6 +107,7 @@
     swaynotificationcenter
     gitoxide
     rustdesk
+    bemoji
   ];
 
   programs = {
