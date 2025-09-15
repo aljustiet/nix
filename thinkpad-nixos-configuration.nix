@@ -9,6 +9,8 @@
 
   system.autoUpgrade.enable = true;
 
+  documentation.man.generateCaches = false;
+
   environment.systemPackages = with pkgs; [
     neovim
     wget
