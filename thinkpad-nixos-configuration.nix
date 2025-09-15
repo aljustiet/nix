@@ -110,6 +110,7 @@
     obs-studio
     traceroute
     speedtest-go
+    halloy
   ];
 
   programs = {
