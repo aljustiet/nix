@@ -115,6 +115,7 @@
     halloy
     brotli
     jq
+    btrfs-progs
   ];
 
   programs = {
