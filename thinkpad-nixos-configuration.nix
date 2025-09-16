@@ -117,6 +117,7 @@
     jq
     btrfs-progs
     gnome-sound-recorder
+    trash-cli
   ];
 
   programs = {
