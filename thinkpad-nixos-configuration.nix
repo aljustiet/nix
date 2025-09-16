@@ -116,6 +116,7 @@
     brotli
     jq
     btrfs-progs
+    gnome-sound-recorder
   ];
 
   programs = {
