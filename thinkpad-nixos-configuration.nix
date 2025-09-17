@@ -118,6 +118,7 @@
     btrfs-progs
     gnome-sound-recorder
     trash-cli
+    gimp3
   ];
 
   programs = {
