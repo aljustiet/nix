@@ -119,6 +119,7 @@
     gnome-sound-recorder
     trash-cli
     gimp3
+    microfetch
   ];
 
   programs = {
@@ -149,6 +150,7 @@
     mullvad-vpn.enable = true;
     vnstat.enable = true;
     flatpak.enable = true;
+    tailscale.enable = true;
     auto-cpufreq = {
       enable = true;
     };
