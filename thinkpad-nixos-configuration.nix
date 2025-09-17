@@ -120,6 +120,7 @@
     trash-cli
     gimp3
     microfetch
+    foliate
   ];
 
   programs = {
