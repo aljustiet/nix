@@ -3,8 +3,8 @@
 {
   imports =
     [
-      ./thinkpad-nixos-hardware.nix
       ./thinkpad-nixos-filesystems.nix
+      ./thinkpad-nixos-hardware.nix
     ];
 
   system.autoUpgrade.enable = true;
