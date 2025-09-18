@@ -121,6 +121,7 @@
     gimp3
     microfetch
     foliate
+    python313Packages.git-filter-repo
   ];
 
   programs = {
