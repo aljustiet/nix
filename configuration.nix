@@ -5,6 +5,7 @@
     [
       ./filesystems.nix
       ./hardware.nix
+      ./security.nix
     ];
 
   system.autoUpgrade.enable = true;
