@@ -121,6 +121,7 @@
     gimp3
     microfetch
     foliate
+    kdePackages.kdeconnect-kde
   ];
 
   programs = {
@@ -129,7 +130,6 @@
     fish.enable = true;
     dconf.enable = true;
     gnupg.agent.enable = true;
-    kdeconnect.enable = true;
   };
 
   security = {
