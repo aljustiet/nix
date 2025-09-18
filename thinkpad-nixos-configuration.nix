@@ -129,6 +129,7 @@
     fish.enable = true;
     dconf.enable = true;
     gnupg.agent.enable = true;
+    kdeconnect.enable = true;
   };
 
   security = {
