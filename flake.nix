@@ -17,7 +17,7 @@
     nixosConfigurations.thinkpad-nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./thinkpad-nixos-configuration.nix
+        ./configuration.nix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
