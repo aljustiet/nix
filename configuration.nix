@@ -126,6 +126,7 @@
     firefox
     nautilus
     xdg-desktop-portal-termfilechooser
+    imagemagick
   ];
 
   programs = {
