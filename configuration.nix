@@ -137,20 +137,6 @@
     kdeconnect.enable = true;
   };
 
-  security = {
-    polkit.enable = true;
-    sudo = {
-      execWheelOnly = true;
-      extraRules = [
-        { users = [ "aljustiet" ]; 
-          commands = [{
-            command = "ALL";
-            options = ["SETENV" "NOPASSWD"];
-          }];}
-      ];
-    };
-  };
-
   services = {
     gnome.gnome-keyring.enable = true;
     printing.enable = true;
