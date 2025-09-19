@@ -1,7 +1,6 @@
 { inputs, config, pkgs, lib, ... }: 
 {
   imports = [
-    inputs.zen-browser.homeModules.beta
   ];
   programs = {
     mpv.enable = true;
