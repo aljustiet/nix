@@ -124,7 +124,7 @@
     foliate
     python313Packages.git-filter-repo
     firefox
-    nautilus
+    xdg-desktop-portal-termfilechooser
   ];
 
   programs = {
