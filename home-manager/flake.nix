@@ -24,7 +24,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.aljustiet = import ./home.nix;
+          home-manager.users.aljustiet = import ./home.nix zen-browser.homeModules.beta;
         }
       ];
     };
