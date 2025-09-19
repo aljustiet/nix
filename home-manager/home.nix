@@ -7,7 +7,7 @@
     zen-browser.enable = true;
     zsh.historySubstringSearch.enable = true;
   };
-  inputs.autoUpgrade.enable = true;
+  config.autoUpgrade.enable = true;
   xdg.userDirs.enable = true;
   xdg.userDirs.createDirectories = true;
   home.username = "aljustiet";
