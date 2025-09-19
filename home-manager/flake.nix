@@ -30,7 +30,7 @@
     };
 
     homeConfigurations.aljustiet = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
+      inherit pkgs inputs;
       extraSpecialArgs = { inherit system; };
       modules = [ ./home.nix inputs.zen-browser.homeModules.beta ];
     };
