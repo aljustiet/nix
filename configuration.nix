@@ -123,6 +123,7 @@
     microfetch
     foliate
     python313Packages.git-filter-repo
+    firefox
   ];
 
   programs = {
