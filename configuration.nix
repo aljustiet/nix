@@ -62,7 +62,7 @@
     smem
     yazi
     cliphist
-    inputs.zen-browser.packages."${system}".default
+    #inputs.zen-browser.packages."${system}".default
     bibata-cursors
     vnstat
     papirus-icon-theme
