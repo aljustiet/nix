@@ -165,7 +165,7 @@
       enable = true;
       alsa.enable = true;
       pulse.enable = true;
-      wireplumbler.enable = true;
+      wireplumber.enable = true;
       jack.enable = true;
     };
   };
