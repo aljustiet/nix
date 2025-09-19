@@ -7,6 +7,7 @@
     zen-browser.enable = true;
     zsh.historySubstringSearch.enable = true;
   };
+  services.home-manager.autoUpgrade.enable = true;
   config.autoUpgrade.enable = true;
   xdg.userDirs.enable = true;
   xdg.userDirs.createDirectories = true;
