@@ -1,7 +1,6 @@
 { inputs, config, pkgs, lib, ... }: 
 {
   imports = [
-    ./portal.nix
   ];
   programs = {
     mpv.enable = true;
