@@ -15,7 +15,7 @@
 
   outputs = { self, nixpkgs, zen-browser, home-manager, ... }: let
     system = "x86_64-linux";
-    pkgs = import nixpkgs { inherit system; };
+    pkgs = import nixpkgs { inherit system zen-browser; };
     in {
     nixosConfigurations.thinkpad-nixos = nixpkgs.lib.nixosSystem {
       inherit system;
