@@ -1,9 +1,11 @@
 { config, pkgs, lib, ... }: 
 {
   imports = [
+    inputs.zen-browser.homeModules.beta
   ];
   programs = {
     mpv.enable = true;
+    zen-browser.enable = true;
     zsh.historySubstringSearch.enable = true;
   };
   xdg.userDirs.enable = true;
