@@ -15,7 +15,7 @@
 
   outputs = { self, nixpkgs, zen-browser, home-manager, ... }: let
     system = "x86_64-linux";
-    pkgs = import nixpkgs { inherit system zen-browser; };
+    pkgs = import nixpkgs { inherit system; };
     in {
     nixosConfigurations.thinkpad-nixos = nixpkgs.lib.nixosSystem {
       inherit system;
@@ -31,7 +31,7 @@
 
     homeConfigurations.aljustiet = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
-      extraSpecialArgs = { inherit system zen-browser; };
+      extraSpecialArgs = { inherit system; };
       modules = [ ./home.nix ];
     };
   };
