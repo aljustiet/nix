@@ -15,7 +15,7 @@
     #{ appId = "com.brave.Browser"; origin = "flathub"; }
     #"com.obsproject.Studio"
     #"im.riot.Riot"
-    com.rustdesk.RustDesk
+    "com.rustdesk.RustDesk"
   ];
 
 }
