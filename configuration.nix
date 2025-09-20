@@ -129,6 +129,7 @@
     imagemagick
     qrencode
     jdk
+    jetbrains.idea-community-bin
   ];
 
   programs = {
