@@ -127,6 +127,7 @@
     nautilus
     xdg-desktop-portal-termfilechooser
     imagemagick
+    qrencode
   ];
 
   programs = {
