@@ -129,6 +129,7 @@
     imagemagick
     qrencode
     jdk
+    jdk23
     jetbrains.idea-community-bin
   ];
 
