@@ -11,24 +11,21 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
-  outputs = { self, nixpkgs, zen-browser, home-manager, nix-flatpak, ... }: let
+  outputs = { self, nixpkgs, zen-browser, home-manager, ... }: let
     system = "x86_64-linux";
     pkgs = import nixpkgs { inherit system; };
     in {
     nixosConfigurations.thinkpad-nixos = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
-        nix-flatpak.nixosModules.nix-flatpak
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.aljustiet.imports = [
             ./home.nix
-            ./flatpak.nix
             zen-browser.homeModules.beta
           ];
         }
