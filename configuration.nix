@@ -146,6 +146,7 @@
 
   services = {
     gnome.gnome-keyring.enable = true;
+    tailscale.enable = true;
     printing = {
       enable = true;
       drivers = with pkgs; [
