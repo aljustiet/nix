@@ -127,7 +127,6 @@
     nautilus
     xdg-desktop-portal-termfilechooser
     imagemagick
-    wifi-qr
   ];
 
   programs = {
