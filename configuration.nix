@@ -150,7 +150,7 @@
       drivers = with pkgs; [
         cups-filters
         cups-browsed
-      ]
+      ];
     };
     avahi = {
       enable = true;
