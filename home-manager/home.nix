@@ -1,7 +1,6 @@
 { inputs, config, pkgs, lib, ... }: 
 {
   imports = [
-    ./flatpak.nix
   ];
   programs = {
     mpv.enable = true;

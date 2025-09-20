@@ -28,6 +28,7 @@
           home-manager.useUserPackages = true;
           home-manager.users.aljustiet.imports = [
             ./home.nix
+            ./flatpak.nix
             zen-browser.homeModules.beta
           ];
         }
