@@ -25,7 +25,6 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs.flake-inputs = inputs;
           home-manager.users.aljustiet.imports = [
             ./home.nix
             zen-browser.homeModules.beta
