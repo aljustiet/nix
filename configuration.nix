@@ -145,7 +145,18 @@
 
   services = {
     gnome.gnome-keyring.enable = true;
-    printing.enable = true;
+    printing = {
+      enable = true;
+      drivers = with pkgs; [
+        cups-filters
+        cups-browsed
+      ]
+    };
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    };
     mullvad-vpn.enable = true;
     vnstat.enable = true;
     flatpak.enable = true;
