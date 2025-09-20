@@ -196,6 +196,7 @@
   networking = {
     hostName = "thinkpad-nixos";
     networkmanager.enable = true;
+    nftables.enable = true;
     extraHosts = ''
       127.0.1.1 thinkpad-nixos.localdomain thinkpad-nixos
     '';
