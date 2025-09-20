@@ -163,7 +163,6 @@
     mullvad-vpn.enable = true;
     vnstat.enable = true;
     flatpak.enable = true;
-    tailscale.enable = false;
     auto-cpufreq = {
       enable = true;
     };
