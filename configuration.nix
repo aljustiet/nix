@@ -129,7 +129,6 @@
     imagemagick
     qrencode
     jdk
-    jetbrains.idea-community-bin
     yt-dlp
   ];
 
