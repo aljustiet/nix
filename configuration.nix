@@ -132,6 +132,7 @@
     yt-dlp
     iw
     wavemon
+    gh
   ];
 
   programs = {
