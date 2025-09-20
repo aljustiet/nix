@@ -130,6 +130,7 @@
     qrencode
     jdk
     yt-dlp
+    iw
   ];
 
   programs = {
