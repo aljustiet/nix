@@ -128,7 +128,7 @@
     xdg-desktop-portal-termfilechooser
     imagemagick
     qrencode
-    jdk23
+    jdk
     jetbrains.idea-community-bin
   ];
 
