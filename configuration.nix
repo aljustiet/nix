@@ -128,6 +128,7 @@
     xdg-desktop-portal-termfilechooser
     imagemagick
     qrencode
+    jdk
   ];
 
   programs = {
