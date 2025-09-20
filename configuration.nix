@@ -150,6 +150,7 @@
       drivers = with pkgs; [
         cups-filters
         cups-browsed
+        cnijfilter2
       ];
     };
     avahi = {
