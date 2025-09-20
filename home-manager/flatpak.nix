@@ -1,5 +1,5 @@
 # home.nix
-{ lib, ... }: {
+{ lib, config, pkgs, flake-inputs, ... }: {
 
   # Add a new remote. Keep the default one (flathub)
   services.flatpak.remotes = lib.mkOptionDefault [{
