@@ -11,6 +11,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
   outputs = { self, nixpkgs, zen-browser, home-manager, ... }: let
@@ -24,7 +25,13 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.aljustiet = import ./home.nix zen-browser.homeModules.beta;
+          home-manager.extraSpecialArgs.flake-inputs = inputs;
+          home-manager.users.aljustiet.imports = [
+            ./home.nix
+            zen-browser.homeModules.beta
+            flatpaks.homeManagerModules.nix-flatpak
+            ./flatpak.nix
+          ];
         }
       ];
     };
