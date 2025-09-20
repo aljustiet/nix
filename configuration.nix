@@ -131,6 +131,7 @@
     jdk
     yt-dlp
     iw
+    micro
   ];
 
   programs = {
