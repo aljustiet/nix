@@ -133,6 +133,7 @@
     iw
     wavemon
     gh
+    exiftool
   ];
 
   programs = {
