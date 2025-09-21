@@ -136,8 +136,6 @@
     exiftool
     wshowkeys
     glow
-    aspell
-    aspellDicts.uz
   ];
 
   programs = {
