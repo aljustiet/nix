@@ -150,6 +150,10 @@
   services = {
     gnome.gnome-keyring.enable = true;
     tailscale.enable = false;
+    logind.settings.Login = {
+      HandleLidSwitch = "ignore";
+      KillUserProcesses = false;
+    };
     printing = {
       enable = true;
       drivers = with pkgs; [
