@@ -134,6 +134,7 @@
     wavemon
     gh
     exiftool
+    wshowkeys
   ];
 
   programs = {
