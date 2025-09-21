@@ -135,6 +135,7 @@
     gh
     exiftool
     wshowkeys
+    glow
   ];
 
   programs = {
