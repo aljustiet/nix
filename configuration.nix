@@ -136,6 +136,7 @@
     exiftool
     wshowkeys
     glow
+    gnome-clocks
   ];
 
   programs = {
