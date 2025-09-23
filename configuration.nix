@@ -139,6 +139,7 @@
     gnome-clocks
     ff2mpv-rust
     ghostty
+    alacritty
   ];
 
   programs = {
