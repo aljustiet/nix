@@ -6,15 +6,6 @@
     mpv.enable = true;
     zen-browser.enable = true;
     zsh.historySubstringSearch.enable = true;
-    fish = {
-      enable = true;
-      plugins = [
-        {
-        name = "plugin-git";
-        src = pkgs.fishPlugins.plugin-git.src;
-        }
-      ];
-    };
   };
   news.display = "silent";
   xdg.userDirs.enable = true;
