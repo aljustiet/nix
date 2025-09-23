@@ -140,6 +140,7 @@
     ff2mpv-rust
     ghostty
     alacritty
+    p7zip
   ];
 
   programs = {
