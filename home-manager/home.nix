@@ -9,8 +9,10 @@
     fish = {
       enable = true;
       plugins = [
+        {
         name = "plugin-git";
         src = pkgs.fishPlugins.plugin-git.src;
+        }
       ];
     };
   };
