@@ -141,6 +141,7 @@
     ghostty
     alacritty
     p7zip
+    sd
   ];
 
   programs = {
