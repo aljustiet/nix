@@ -138,6 +138,7 @@
     glow
     gnome-clocks
     ff2mpv-rust
+    ghostty
   ];
 
   programs = {
