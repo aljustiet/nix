@@ -98,6 +98,7 @@
     enable = true;
     settings = {
       main = {
+        shell = "fish";
         include = "/home/aljustiet/Documents/foot/themes/gruvbox-dark";
         font = "JetBrainsMono Nerd Font:style=Regular:size=16";
         font-bold = "JetBrainsMono Nerd Font:style=Bold:size=16";
