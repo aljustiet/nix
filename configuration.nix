@@ -143,7 +143,7 @@
     p7zip
     sd
     torsocks
-    nvtop
+    nvtopPackages.amd
     amdgpu_top
   ];
 
