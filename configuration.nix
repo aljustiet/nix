@@ -143,6 +143,8 @@
     p7zip
     sd
     torsocks
+    nvtop
+    amdgpu_top
   ];
 
   programs = {
