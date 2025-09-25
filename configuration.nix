@@ -142,6 +142,7 @@
     alacritty
     p7zip
     sd
+    torsocks
   ];
 
   programs = {
