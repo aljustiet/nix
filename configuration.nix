@@ -157,7 +157,10 @@
   services = {
     gnome.gnome-keyring.enable = true;
     tailscale.enable = false;
-    tor.enable = true;
+    tor = {
+      enable = true;
+      torsocks.enable = true;
+    };
     logind.settings.Login = {
       HandleLidSwitch = "ignore";
     };
