@@ -145,6 +145,7 @@
     torsocks
     nvtopPackages.amd
     amdgpu_top
+    signal-desktop
   ];
 
   programs = {
