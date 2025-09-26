@@ -145,6 +145,7 @@
     torsocks
     nvtopPackages.amd
     amdgpu_top
+    calcurse
   ];
 
   programs = {
