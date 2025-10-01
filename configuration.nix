@@ -147,6 +147,7 @@
     amdgpu_top
     calcurse
     batsignal
+    killall
   ];
 
   programs = {
