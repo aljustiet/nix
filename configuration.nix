@@ -148,7 +148,6 @@
     calcurse
     batsignal
     killall
-    nvidia-smi
     bc
   ];
 
