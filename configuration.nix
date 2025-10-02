@@ -149,6 +149,7 @@
     batsignal
     killall
     bc
+    wlogout
   ];
 
   programs = {
