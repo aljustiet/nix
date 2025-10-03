@@ -152,6 +152,7 @@
     wlogout
     monero-cli
     monero-gui
+    pinta
   ];
 
   programs = {
