@@ -150,6 +150,8 @@
     killall
     bc
     wlogout
+    monero-cli
+    monero-gui
   ];
 
   programs = {
