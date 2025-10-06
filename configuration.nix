@@ -207,6 +207,7 @@
           enable_thresholds = true;
           start_threshold = 20;
           stop_threshold = 80;
+        };
       };
     };
     pipewire = {
@@ -293,4 +294,4 @@
   };
 
   system.stateVersion = "25.05";
-};
+}
