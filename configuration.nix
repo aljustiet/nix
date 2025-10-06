@@ -83,18 +83,14 @@
     topgrade
     dnsutils
     dig
-    nwg-look
     gruvbox-gtk-theme
     gruvbox-kvantum
     libsForQt5.qt5ct
     qt6ct
     solaar
     logitech-udev-rules
-    wine
-    bottles-unwrapped
     terminus_font
     xh
-    go
     poppler-utils
     epub2txt2
     ddcutil
@@ -103,7 +99,6 @@
     lm_sensors
     brightnessctl
     fractal
-    kdePackages.kdenlive
     shotcut
     unzip
     swayimg
@@ -126,7 +121,6 @@
     microfetch
     foliate
     python313Packages.git-filter-repo
-    firefox
     nautilus
     xdg-desktop-portal-termfilechooser
     imagemagick
