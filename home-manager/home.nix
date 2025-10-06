@@ -1,5 +1,10 @@
-{ inputs, config, pkgs, lib, ... }: 
 {
+  inputs,
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
   ];
   programs = {
@@ -107,13 +112,12 @@
     };
   };
   home.stateVersion = "25.05";
-#  programs.waybar = {
-#    enable = true;
-#    settings = {
-#      main = {
-#        font = 
-#      }
-#    }
-#  }
+  #  programs.waybar = {
+  #    enable = true;
+  #    settings = {
+  #      main = {
+  #        font =
+  #      }
+  #    }
+  #  }
 }
-

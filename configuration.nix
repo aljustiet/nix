@@ -1,12 +1,15 @@
-{ inputs, config, lib, pkgs, ... }:
-
 {
-  imports =
-    [
-      ./filesystems.nix
-      ./hardware.nix
-      ./security.nix
-    ];
+  inputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  imports = [
+    ./filesystems.nix
+    ./hardware.nix
+    ./security.nix
+  ];
 
   system.autoUpgrade.enable = true;
 
@@ -153,6 +156,7 @@
     monero-cli
     monero-gui
     pinta
+    alejandra
   ];
 
   programs = {
@@ -234,7 +238,7 @@
     i2c.enable = true;
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
   nixpkgs.config.allowUnfree = true;
 
   networking = {
@@ -261,7 +265,7 @@
   console = {
     earlySetup = true;
     font = "ter-v32n";
-    packages = [ pkgs.terminus_font ];
+    packages = [pkgs.terminus_font];
   };
 
   environment.sessionVariables = {
@@ -289,7 +293,7 @@
     isNormalUser = true;
     group = "aljustiet";
     uid = 1000;
-    extraGroups = [ "wheel" "network" "audio" "video" "input" "uinput" ];
+    extraGroups = ["wheel" "network" "audio" "video" "input" "uinput"];
     shell = pkgs.zsh;
   };
 

@@ -1,0 +1,22 @@
+building the system configuration...
+stopping the following units: auto-cpufreq.service, avahi-daemon.service, avahi-daemon.socket, cups-browsed.service, cups.service, cups.socket, kmod-static-nodes.service, logrotate-checkconf.service, mullvad-daemon.service, network-setup.service, NetworkManager-wait-online.service, NetworkManager.service, nftables.service, nscd.service, resolvconf.service, rtkit-daemon.service, systemd-modules-load.service, systemd-oomd.service, systemd-oomd.socket, systemd-sysctl.service, systemd-timesyncd.service, systemd-tmpfiles-resetup.service, tor.service, vnstat.service, wpa_supplicant.service
+NOT restarting the following changed units: bluetooth.service, getty@tty1.service, systemd-backlight@backlight:amdgpu_bl1.service, systemd-backlight@leds:tpacpi::kbd_backlight.service, systemd-fsck@dev-disk-by\x2duuid-1A6B\x2d00CA.service, systemd-journal-flush.service, systemd-logind.service, systemd-random-seed.service, systemd-remount-fs.service, systemd-update-utmp.service, systemd-user-sessions.service, user-runtime-dir@1000.service, user@1000.service
+activating the configuration...
+removing group ‘tor’
+removing group ‘rtkit’
+removing group ‘avahi’
+removing group ‘flatpak’
+removing user ‘tor’
+removing user ‘avahi’
+removing user ‘rtkit’
+removing user ‘flatpak’
+setting up /etc...
+removing obsolete symlink ‘/etc/tmpfiles.d/flatpak.conf’...
+removing obsolete symlink ‘/etc/tor/torsocks.conf’...
+reloading user units for aljustiet...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service, reload-systemd-vconsole-setup.service
+restarting the following units: nix-daemon.service, polkit.service, systemd-journald.service, systemd-udevd.service
+starting the following units: auto-cpufreq.service, cups.socket, kmod-static-nodes.service, logrotate-checkconf.service, mullvad-daemon.service, network-setup.service, NetworkManager-wait-online.service, NetworkManager.service, nscd.service, resolvconf.service, systemd-modules-load.service, systemd-oomd.socket, systemd-sysctl.service, systemd-timesyncd.service, systemd-tmpfiles-resetup.service, vnstat.service, wpa_supplicant.service
+the following new units were started: firewall.service, NetworkManager-dispatcher.service, sys-devices-pci0000:00-0000:00:08.1-0000:33:00.4-usb4-4\x2d2-4\x2d2:1.0-net-enp51s0f4u2.device, sys-subsystem-net-devices-enp51s0f4u2.device, systemd-hostnamed.service
+Done. The new configuration is /nix/store/il5aah2djkajwymlslmh1cgg8dchnbmz-nixos-system-thinkpad-nixos-25.11.20250910.ab0f360

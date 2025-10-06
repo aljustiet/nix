@@ -1,7 +1,10 @@
 # /etc/nixos/kanata.nix
-{ config, pkgs, lib, ... }:
-
-let
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}: let
   kanata = pkgs.rustPlatform.buildRustPackage rec {
     pname = "kanata";
     version = "git";
@@ -17,12 +20,11 @@ let
       lockFile = src + "/Cargo.lock";
     };
 
-    nativeBuildInputs = with pkgs; [ pkg-config ];
-    buildInputs = with pkgs; [ udev ];
+    nativeBuildInputs = with pkgs; [pkg-config];
+    buildInputs = with pkgs; [udev];
   };
-in
-{
-  environment.systemPackages = [ kanata ];
+in {
+  environment.systemPackages = [kanata];
 
   services.kanata = {
     enable = true;
@@ -32,8 +34,8 @@ in
 
   systemd.services.kanata = {
     description = "Kanata Keyboard Remapper";
-    after = [ "network.target" ];
-    wantedBy = [ "multi-user.target" ];
+    after = ["network.target"];
+    wantedBy = ["multi-user.target"];
     serviceConfig = {
       ExecStart = "${kanata}/bin/kanata -c /etc/kanata/kanata.kbd";
       Restart = "always";

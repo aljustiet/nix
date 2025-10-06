@@ -13,10 +13,16 @@
     };
   };
 
-  outputs = { self, nixpkgs, zen-browser, home-manager, ... }: let
+  outputs = {
+    self,
+    nixpkgs,
+    zen-browser,
+    home-manager,
+    ...
+  }: let
     system = "x86_64-linux";
-    pkgs = import nixpkgs { inherit system; };
-    in {
+    pkgs = import nixpkgs {inherit system;};
+  in {
     nixosConfigurations.thinkpad-nixos = nixpkgs.lib.nixosSystem {
       inherit system;
       modules = [
@@ -34,9 +40,8 @@
 
     homeConfigurations.aljustiet = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
-      extraSpecialArgs = { inherit system; };
-      modules = [ ./home.nix zen-browser.homeModules.beta ];
+      extraSpecialArgs = {inherit system;};
+      modules = [./home.nix zen-browser.homeModules.beta];
     };
   };
 }
-
