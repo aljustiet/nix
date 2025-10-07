@@ -99,6 +99,7 @@
     lm_sensors
     brightnessctl
     fractal
+    shotcut
     unzip
     swayimg
     nh
