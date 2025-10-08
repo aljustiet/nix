@@ -150,6 +150,7 @@
     monero-gui
     pinta
     alejandra
+    ripgrep-all
   ];
 
   programs = {
