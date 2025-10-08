@@ -151,6 +151,7 @@
     pinta
     alejandra
     ripgrep-all
+    btrfs-progs
   ];
 
   programs = {
