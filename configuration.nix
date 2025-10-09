@@ -152,6 +152,7 @@
     alejandra
     ripgrep-all
     btrfs-progs
+    swaylock
   ];
 
   programs = {
