@@ -152,6 +152,8 @@
     alejandra
     ripgrep-all
     btrfs-progs
+    scid
+    scid-vs-pc
   ];
 
   programs = {
