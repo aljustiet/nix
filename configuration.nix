@@ -153,6 +153,7 @@
     ripgrep-all
     btrfs-progs
     swaylock
+    chess-tui
   ];
 
   programs = {
