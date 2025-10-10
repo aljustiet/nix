@@ -154,7 +154,7 @@
     btrfs-progs
     swaylock
     chess-tui
-    fortune-rust
+    fortune-kind
     spotify
   ];
 
