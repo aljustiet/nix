@@ -157,7 +157,6 @@
     fortune-kind
     cowsay
     spotify
-    youtube-tui
   ];
 
   programs = {
