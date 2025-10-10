@@ -155,6 +155,7 @@
     swaylock
     chess-tui
     fortune
+    spotify
   ];
 
   programs = {
