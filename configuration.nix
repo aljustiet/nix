@@ -154,6 +154,7 @@
     btrfs-progs
     swaylock
     chess-tui
+    fortune
   ];
 
   programs = {
