@@ -157,6 +157,7 @@
     fortune-kind
     cowsay
     spotify
+    wl-screenrec
   ];
 
   programs = {
