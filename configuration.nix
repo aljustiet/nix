@@ -292,6 +292,9 @@
     gid = 1000;
   };
 
+  users.groups.network = { };
+  users.groups.uinput = { };
+
   users.users.aljustiet = {
     isNormalUser = true;
     group = "aljustiet";
