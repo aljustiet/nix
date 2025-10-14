@@ -12,6 +12,7 @@
     zen-browser.enable = true;
     zsh.historySubstringSearch.enable = true;
   };
+  fonts.fontconfig.enable = true;
   news.display = "silent";
   xdg.userDirs.enable = true;
   xdg.userDirs.createDirectories = true;
