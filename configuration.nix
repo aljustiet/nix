@@ -281,6 +281,8 @@
     enableDefaultPackages = false;
     packages = with pkgs; [
       nerd-fonts.jetbrains-mono
+      nerd-fonts.fira-code
+      nerd-fonts.go-mono
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
     ];
