@@ -158,6 +158,7 @@
     cowsay
     spotify
     wl-screenrec
+    rocm_smi_lib
   ];
 
   programs = {
