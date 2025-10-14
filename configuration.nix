@@ -288,10 +288,6 @@
     shell = pkgs.fish;
   };
 
-  users.groups.aljustiet = {
-    gid = 1000;
-  };
-
   users.groups.network = { };
   users.groups.uinput = { };
 
