@@ -5,8 +5,7 @@
   pkgs,
   ...
 }: {
-  services.displayManager.autoLogin.enable = true;
-  services.displayManager.autoLogin.user = "aljustiet";
+  services.getty.autologinUser = "aljustiet";
   users.users.root = {
     shell = pkgs.fish;
   };
