@@ -5,6 +5,8 @@
   pkgs,
   ...
 }: {
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "aljustiet";
   users.users.root = {
     shell = pkgs.fish;
   };
