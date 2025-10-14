@@ -9,6 +9,7 @@
     ./filesystems.nix
     ./hardware.nix
     ./security.nix
+    ./udev
   ];
 
   system.autoUpgrade.enable = true;
