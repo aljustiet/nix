@@ -11,7 +11,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_testing;
+  #boot.kernelPackages = pkgs.linuxPackages_testing;
   boot.kernelParams = [
     "cryptdevice=PARTUUID=de12c19e-6319-45fc-a895-427d496df476:luks"
     "root=/dev/vg_group/btrfs"

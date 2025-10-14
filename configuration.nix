@@ -159,6 +159,7 @@
     spotify
     wl-screenrec
     btop-rocm
+    efibootmgr
   ];
 
   programs = {
