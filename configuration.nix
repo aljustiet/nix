@@ -160,8 +160,6 @@
     wl-screenrec
     btop-rocm
     efibootmgr
-    albert
-    walker
   ];
 
   programs = {
