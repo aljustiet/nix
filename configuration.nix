@@ -162,6 +162,7 @@
     wl-screenrec
     btop-rocm
     efibootmgr
+    gnome-calculator
   ];
 
   programs = {
