@@ -163,6 +163,7 @@
     btop-rocm
     efibootmgr
     gnome-calculator
+    element-desktop
   ];
 
   programs = {
