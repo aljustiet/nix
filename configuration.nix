@@ -100,7 +100,6 @@
     iotop
     lm_sensors
     brightnessctl
-    fractal
     unzip
     swayimg
     nh
