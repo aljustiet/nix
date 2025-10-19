@@ -162,6 +162,7 @@
     btop-rocm
     efibootmgr
     gnome-calculator
+    usbutils
   ];
 
   programs = {
