@@ -163,6 +163,7 @@
     efibootmgr
     gnome-calculator
     usbutils
+    chezmoi
   ];
 
   programs = {
