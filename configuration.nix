@@ -6,11 +6,11 @@
   ...
 }: {
   imports = [
-    ./filesystems.nix
-    ./hardware.nix
-    ./security.nix
-    ./udev.nix
-    ./uag.nix
+    ./modules/filesystems.nix
+    ./modules/hardware.nix
+    ./modules/security.nix
+    ./modules/udev.nix
+    ./modules/uag.nix
   ];
 
   system.autoUpgrade.enable = true;
