@@ -11,6 +11,10 @@
       url = "github:0xc000022070/zen-browser-flake/beta";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    niri = {
+      url = "github.com/sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -18,6 +22,7 @@
     nixpkgs,
     home-manager,
     zen-browser,
+    niri,
     ...
   }: let
     system = "x86_64-linux";
@@ -33,6 +38,7 @@
           home-manager.users.aljustiet.imports = [
             ./home.nix
             zen-browser.homeModules.beta
+            niri.nixosModules.niri
           ];
         }
       ];
@@ -41,7 +47,7 @@
     homeConfigurations.aljustiet = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
       extraSpecialArgs = {inherit system;};
-      modules = [./home.nix zen-browser.homeModules.beta];
+      modules = [./home.nix zen-browser.homeModules.beta niri.nixosModules.niri];
     };
   };
 }
