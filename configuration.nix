@@ -165,6 +165,7 @@
     usbutils
     chezmoi
     cachix
+    helix
   ];
 
   programs = {
