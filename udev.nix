@@ -6,8 +6,8 @@
   ...
 }:
 let
-  disableTouchpadWakeUp = true;
-  enableMouseWakeUpRule = false;
+  disableTouchpadWakeUp = false;
+  disableMouseWakeUp = true;
 
   udevRules = [
     ''KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"''
