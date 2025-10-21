@@ -179,7 +179,7 @@
 
   services = {
     gnome.gnome-keyring.enable = true;
-    tailscale.enable = false;
+    tailscale.enable = true;
     tor = {
       enable = true;
       torsocks.enable = true;
