@@ -10,7 +10,7 @@
   services.solaar = {
     enable = true;
     package = pkgs.solaar;
-    window = "show";
+    window = "hide";
     batteryIcons = "regular";
     extraArgs = "";
   };
