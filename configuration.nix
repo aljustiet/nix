@@ -11,6 +11,7 @@
     ./modules/security.nix
     ./modules/udev.nix
     ./modules/uag.nix
+    ./modules/solaar.nix
   ];
 
   system.autoUpgrade.enable = true;
