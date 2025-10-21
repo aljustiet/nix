@@ -3,12 +3,18 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake/beta";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    home-manager = {
-      url = "github:nix-community/home-manager";
+    solaar = {
+      #url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz"; # For latest stable version
+      #url = "https://flakehub.com/f/Svenum/Solaar-Flake/0.1.1.tar.gz"; # uncomment line for solaar version 1.1.13
+      url = "github:Svenum/Solaar-Flake/main"; # Uncomment line for latest unstable version
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -16,8 +22,9 @@
   outputs = {
     self,
     nixpkgs,
-    zen-browser,
     home-manager,
+    zen-browser,
+    solaar,
     ...
   }: let
     system = "x86_64-linux";
@@ -35,6 +42,7 @@
             zen-browser.homeModules.beta
           ];
         }
+        solaar.nixosModules.default
       ];
     };
 
