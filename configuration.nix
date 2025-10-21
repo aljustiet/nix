@@ -291,5 +291,7 @@
     ];
   };
 
+  nix.settings.trusted-users = [ "root" "aljustiet" ];
+
   system.stateVersion = "25.05";
 }
