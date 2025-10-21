@@ -89,7 +89,6 @@
     gruvbox-kvantum
     libsForQt5.qt5ct
     qt6ct
-    solaar
     logitech-udev-rules
     terminus_font
     xh
