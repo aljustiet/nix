@@ -10,6 +10,7 @@ let
   enableMouseWakeUpRule = false;
 
   udevRules = [
+    ''KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"''
   ] ++ (lib.optional disableTouchpadWakeUp ''
     KERNEL=="i2c-SYNA8018:00", SUBSYSTEM=="i2c", ATTR{power/wakeup}="disabled"
   '') ++ (lib.optional disableTouchpadWakeUp ''
