@@ -6,6 +6,7 @@
   ...
 }: {
   imports = [
+    ./modules/solaar.nix
   ];
   programs = {
     mpv.enable = true;
