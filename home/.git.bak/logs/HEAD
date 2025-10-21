@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 fe007eaf22e857fc04db03cd02def21347bc4ef2 aljustiet <aljustiet@tutamail.com> 1741013262 +0500	commit (initial): Initial commit
+fe007eaf22e857fc04db03cd02def21347bc4ef2 8c57cba9170dc0f4bfbee8c1aac73908888e0acd aljustiet <aljustiet@tutamail.com> 1741013591 +0500	commit: Fixed bunch of errors with home-manager
+8c57cba9170dc0f4bfbee8c1aac73908888e0acd cce395cc975e14f8acf4dabce790b10b8f69f8f5 aljustiet <aljustiet@tutamail.com> 1756881183 +0500	commit: Checkpoint
+cce395cc975e14f8acf4dabce790b10b8f69f8f5 6007eb093f4f9a557259476cf43bd90ae1ca4035 aljustiet <aljustiet@tutamail.com> 1756958406 +0500	commit: Checkpoint
+6007eb093f4f9a557259476cf43bd90ae1ca4035 254888c2a13224882d436aa47ac3509c3edd156a aljustiet <aljustiet@tutamail.com> 1757588751 +0500	commit: xdg dirs set
+254888c2a13224882d436aa47ac3509c3edd156a d9ed1f5fa9a71aafb3b141e3535c5ea1b94ad111 aljustiet <aljustiet@tutamail.com> 1757590886 +0500	commit: Checkpoint
+d9ed1f5fa9a71aafb3b141e3535c5ea1b94ad111 9ae774975105753ddf1d7d604c84da13d49bdb32 aljustiet <aljustiet@tutamail.com> 1757591418 +0500	commit: Checkpoint
+9ae774975105753ddf1d7d604c84da13d49bdb32 e8a378728b1974d31d03ab6f93088b01a22b8bbb aljustiet <aljustiet@tutamail.com> 1757591540 +0500	commit: set gruvbox-light theme
+e8a378728b1974d31d03ab6f93088b01a22b8bbb 4eb09f0b658e49cbebd13f40ba1cb0b6501b919e aljustiet <aljustiet@tutamail.com> 1757591813 +0500	commit: set papirus icon theme
+4eb09f0b658e49cbebd13f40ba1cb0b6501b919e dc986d84b846c86fc8395fd56ac2800de296c6a6 aljustiet <aljustiet@tutamail.com> 1757594453 +0500	commit: Checkpoint
+dc986d84b846c86fc8395fd56ac2800de296c6a6 9bf0138cb400aa86205ecfbbc12132c081a3e63c aljustiet <aljustiet@tutamail.com> 1757597792 +0500	commit: add gtk_theme env variable
+9bf0138cb400aa86205ecfbbc12132c081a3e63c 3623a7054020f710756992d102e6f210eb15a86b aljustiet <aljustiet@tutamail.com> 1757600385 +0500	commit: add xdg.mimeApps
+3623a7054020f710756992d102e6f210eb15a86b 0f13b292bb9861a59b336fdbb1409340739e7575 aljustiet <aljustiet@tutamail.com> 1757600630 +0500	commit: same for epub+zip
+0f13b292bb9861a59b336fdbb1409340739e7575 0ea2f7ee7f0d3fb9214537e1c8a3c4d8cdda215e aljustiet <aljustiet@tutamail.com> 1757652770 +0500	commit: mime
+0ea2f7ee7f0d3fb9214537e1c8a3c4d8cdda215e 134b03531f209b5df04f01799e836436511861cd aljustiet <aljustiet@tutamail.com> 1757653200 +0500	commit: remove lib.services.kanata
+134b03531f209b5df04f01799e836436511861cd 48379eec6251e24bc6170440b7110b6d1061a33d aljustiet <aljustiet@tutamail.com> 1757657109 +0500	commit: checkpoint
+48379eec6251e24bc6170440b7110b6d1061a33d 9e05c56536e187acd2cdd37fb01d9a355b041c26 aljustiet <aljustiet@tutamail.com> 1757657345 +0500	commit: gnome-session
+9e05c56536e187acd2cdd37fb01d9a355b041c26 0302d95c22bfa799977c8708ae36a22e04dc5b8f aljustiet <aljustiet@tutamail.com> 1757672034 +0500	commit: checkpoint
+0302d95c22bfa799977c8708ae36a22e04dc5b8f c89a2b8a30f6e27145a69af34e5767cff3d834bd aljustiet <aljustiet@tutamail.com> 1757752033 +0500	commit: checkpoint
+c89a2b8a30f6e27145a69af34e5767cff3d834bd d13219fe80a2f8aedd50d7c9290e42d27b4fb867 aljustiet <aljustiet@tutamail.com> 1757773414 +0500	commit: change foot theme to light
+d13219fe80a2f8aedd50d7c9290e42d27b4fb867 ecddfafba08bbbdce501bf98f17ab44d3bce5d70 aljustiet <aljustiet@tutamail.com> 1757831108 +0500	commit: back to dark foot
+ecddfafba08bbbdce501bf98f17ab44d3bce5d70 426a2fe10ae7d14a7f0b7457ad02c6c55a8c3e55 aljustiet <aljustiet@tutamail.com> 1757949802 +0500	commit: jpeg png mime
+426a2fe10ae7d14a7f0b7457ad02c6c55a8c3e55 5c026114e921d71a8d229d6a01a506c22cae0b80 aljustiet <aljustiet@tutamail.com> 1758025348 +0500	commit: enable mpv
+5c026114e921d71a8d229d6a01a506c22cae0b80 b4a19cae761e3008c670be41b6596982a87c49e3 aljustiet <aljustiet@tutamail.com> 1758096806 +0500	commit: plain nvim
+b4a19cae761e3008c670be41b6596982a87c49e3 9647df6bc478fa4435b82955ca7d64ab118d66a2 aljustiet <aljustiet@tutamail.com> 1758104839 +0500	commit: zsh.historySubstringSearch = true;
