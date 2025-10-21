@@ -40,16 +40,16 @@
           home-manager.users.aljustiet.imports = [
             ./home.nix
             zen-browser.homeModules.beta
+            solaar.nixosModules.default
           ];
         }
-        solaar.nixosModules.default
       ];
     };
 
     homeConfigurations.aljustiet = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
       extraSpecialArgs = {inherit system;};
-      modules = [./home.nix zen-browser.homeModules.beta];
+      modules = [./home.nix zen-browser.homeModules.beta solaar.nixosModules.default];
     };
   };
 }
