@@ -38,7 +38,7 @@
           home-manager.users.aljustiet.imports = [
             ./home.nix
             zen-browser.homeModules.beta
-            niri.nixosModules.niri
+            niri.homeModules.niri
           ];
         }
       ];
