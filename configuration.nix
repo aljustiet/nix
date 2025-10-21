@@ -164,6 +164,7 @@
     gnome-calculator
     usbutils
     chezmoi
+    cachix
   ];
 
   programs = {
