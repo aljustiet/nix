@@ -7,6 +7,8 @@
 }: 
 
 {
+  boot.tmp.useTmpfs = true;
+  boot.tmp.tmpfsSize = "50%";
   nix.settings = {
     max-jobs = 16;
     substituters = [
