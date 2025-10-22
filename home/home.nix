@@ -6,6 +6,7 @@
   ...
 }: {
   imports = [
+    ../modules/nix.nix
   ];
   programs = {
     mpv.enable = true;
