@@ -166,6 +166,7 @@
     chezmoi
     cachix
     helix
+    below
   ];
 
   programs = {
