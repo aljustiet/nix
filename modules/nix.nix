@@ -8,6 +8,7 @@
 
 {
   nix.settings = {
+    max-jobs = 16;
     substituters = [
       "https://cache.nixos.org/"
       "https://nix-community.cachix.org/"
