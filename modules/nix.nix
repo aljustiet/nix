@@ -11,7 +11,6 @@
   boot.tmp.tmpfsSize = "50%";
   nix.settings = {
     max-jobs = 16;
-    log-format = "bar-with-logs";
     substituters = [
       "https://cache.nixos.org/"
       "https://nix-community.cachix.org/"
