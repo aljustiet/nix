@@ -6,22 +6,17 @@
   ...
 }: 
 
-let
-  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-  session = "${pkgs.niri}/bin/niri-session";
-  username = "aljustiet";
-in
-
 {
   services.greetd = {
     enable = true;
     settings = {
       initial_session = {
-        command = "${session}";
-        user = "${username}";
+        command = "${pkgs.niri}/bin/niri-session";
+        user = "aljustiet";
       };
       default_session = {
-        command = "${tuigreet} --greeting 'Welcome to NixOS!' --asterisks --remember --remember-user-session --time -cmd ${session}";
+        # The change is inlined here
+        command = "${pkgs.tuigreet}/bin/tuigreet --greeting 'Welcome to NixOS!' --asterisks --remember --remember-user-session --time -cmd ${pkgs.niri}/bin/niri-session";
         user = "greeter";
       };
     };
