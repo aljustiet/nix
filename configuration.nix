@@ -39,7 +39,7 @@
     ripgrep
     tokei
     kanata-with-cmd
-    ayugram-desktop
+    telegram-dekstop
     fd
     grim
     slurp
