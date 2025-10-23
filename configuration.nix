@@ -78,7 +78,6 @@
     xdg-user-dirs
     libqalculate
     evtest
-    mullvad-vpn
     scrcpy
     android-tools
     dash
@@ -211,6 +210,7 @@
       openFirewall = true;
     };
     mullvad-vpn.enable = true;
+    mullvad-vpn.package = pkgs.mullvad-vpn;
     vnstat.enable = true;
     flatpak.enable = true;
     auto-cpufreq = {
