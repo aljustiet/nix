@@ -20,7 +20,6 @@
   documentation.man.generateCaches = false;
 
   environment.systemPackages = with pkgs; [
-    neovim
     wget
     git
     wl-clipboard
@@ -171,6 +170,12 @@
   ];
 
   programs = {
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+      viAlias = true;
+      vimAlias = true;
+    };
     niri.enable = true;
     zsh.enable = true;
     fish.enable = true;
