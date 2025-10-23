@@ -13,6 +13,7 @@
     ./modules/uag.nix
     ./modules/solaar.nix
     ./modules/nix.nix
+    ./modules/networking.nix
   ];
 
   system.autoUpgrade.enable = true;
