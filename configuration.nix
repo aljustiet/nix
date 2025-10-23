@@ -167,6 +167,7 @@
     chezmoi
     cachix
     helix
+    lua-language-server
   ];
 
   programs = {
