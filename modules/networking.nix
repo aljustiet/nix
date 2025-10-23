@@ -7,5 +7,5 @@
 }: 
 
 {
-  
+  services.resolved.enable = true;
 }
