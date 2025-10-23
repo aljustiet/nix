@@ -30,7 +30,7 @@
     isNormalUser = true;
     group = "aljustiet";
     uid = 1000;
-    extraGroups = ["wheel" "network" "audio" "video" "input" "uinput"];
+    extraGroups = ["wheel" "network" "audio" "video" "input" "uinput" "disk"];
     shell = pkgs.zsh;
   };
 }
