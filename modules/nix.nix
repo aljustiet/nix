@@ -11,7 +11,9 @@
   boot.tmp.tmpfsSize = "50%";
   nix.settings = {
     max-jobs = 16;
-    substituters = [
+    experimental-features = ["nix-command" "flakes"];
+    auto-optimise-store = true;
+    substituters = lib.mkForce [
       "https://cache.nixos.org/"
       "https://nix-community.cachix.org/"
     ];
