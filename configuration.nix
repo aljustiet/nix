@@ -167,6 +167,7 @@
     cachix
     helix
     lua-language-server
+    wev
   ];
 
   programs = {
