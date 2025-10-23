@@ -168,6 +168,7 @@
     helix
     lua-language-server
     wev
+    playerctl
   ];
 
   programs = {
