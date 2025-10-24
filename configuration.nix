@@ -168,6 +168,7 @@
     lua-language-server
     wev
     playerctl
+    puddletag
   ];
 
   programs = {
