@@ -29,7 +29,7 @@
     isNormalUser = true;
     group = "aljustiet";
     uid = 1000;
-    extraGroups = ["wheel" "network" "audio" "video" "input" "disk"];
+    extraGroups = ["wheel" "network" "audio" "video" "input" "disk" "i2c"];
     shell = pkgs.zsh;
   };
 }

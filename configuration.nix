@@ -10,7 +10,7 @@
     ./modules/hardware.nix
     ./modules/security.nix
     ./modules/udev.nix
-    ./modules/uag.nix
+    ./modules/users-and-groups/aljustiet.nix
     ./modules/solaar.nix
     ./modules/nix.nix
     ./modules/networking.nix
