@@ -16,6 +16,10 @@
   hardware.uinput.enable = true;
   users.groups.uinput = { };
 
+  services.udev.extraRules = ''
+    KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"
+  '';
+
   users.users.aljustiet.extraGroups = [ "uinput" ];
 
   systemd.services.kanata-internalKeyboard.serviceConfig = {
