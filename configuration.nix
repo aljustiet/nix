@@ -87,8 +87,6 @@
     dig
     gruvbox-gtk-theme
     gruvbox-kvantum
-    libsForQt5.qt5ct
-    qt6ct
     logitech-udev-rules
     terminus_font
     xh
@@ -169,6 +167,7 @@
     wev
     playerctl
     puddletag
+    nix-index
   ];
 
   programs = {
