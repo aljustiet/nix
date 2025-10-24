@@ -14,7 +14,6 @@
     ./modules/solaar.nix
     ./modules/nix.nix
     ./modules/networking.nix
-    ./modules/kanata.nix
   ];
 
   system.autoUpgrade.enable = true;
@@ -169,6 +168,7 @@
     lua-language-server
     wev
     playerctl
+    kanata-with-cmd
   ];
 
   programs = {
