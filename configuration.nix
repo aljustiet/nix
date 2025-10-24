@@ -39,7 +39,7 @@
     bat
     ripgrep
     tokei
-    telegram-desktop
+    ayugram-desktop
     fd
     grim
     slurp
