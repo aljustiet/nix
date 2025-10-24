@@ -10,7 +10,6 @@
   programs = {
     mpv.enable = true;
     zen-browser.enable = true;
-    zsh.historySubstringSearch.enable = true;
   };
   fonts.fontconfig.enable = true;
   news.display = "silent";
