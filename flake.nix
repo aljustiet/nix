@@ -2,6 +2,7 @@
   description = "NixOS";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-pkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     solaar = {
       url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz"; # For latest stable version
       #url = "github:Svenum/Solaar-Flake/main"; # Uncomment line for latest unstable version
