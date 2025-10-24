@@ -23,7 +23,7 @@
   ];
 
   boot.initrd.availableKernelModules = ["nvme" "btrfs" "dm-crypt" "usbhid" "usb_storage"];
-  boot.initrd.kernelModules = ["dm-snapshot" "amdgpu" ];
+  boot.initrd.kernelModules = ["dm-snapshot" "amdgpu" "uinput" ];
   boot.initrd.luks.devices.luks = {
     device = "/dev/disk/by-partuuid/de12c19e-6319-45fc-a895-427d496df476";
     preLVM = true;

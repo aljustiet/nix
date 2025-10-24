@@ -12,7 +12,6 @@
     keyboards.thinkpad.configFile = ./thinkpad-niri.kbd;
   };
 
-  boot.kernelModules = [ "uinput" ];
   hardware.uinput.enable = true;
 
   systemd.services.kanata-internalKeyboard.serviceConfig = {
