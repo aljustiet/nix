@@ -14,6 +14,7 @@
     ./modules/solaar.nix
     ./modules/nix.nix
     ./modules/networking.nix
+    ./modules/kanata.nix
   ];
 
   system.autoUpgrade.enable = true;
@@ -38,7 +39,6 @@
     bat
     ripgrep
     tokei
-    kanata-with-cmd
     telegram-desktop
     fd
     grim
