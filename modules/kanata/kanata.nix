@@ -14,6 +14,9 @@
 
   boot.kernelModules = [ "uinput" ];
   hardware.uinput.enable = true;
+  users.groups.uinput = { };
+
+  users.users.aljustiet.extraGroups = [ "uinput" ];
 
   systemd.services.kanata-internalKeyboard.serviceConfig = {
     SupplementaryGroups = [
