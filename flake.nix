@@ -13,6 +13,7 @@
   outputs = {
     self,
     nixpkgs,
+    nixpkgs-pkgs,
     solaar,
     ...
   } @ inputs: {

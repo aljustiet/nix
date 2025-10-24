@@ -39,7 +39,7 @@
     bat
     ripgrep
     tokei
-    ayugram-desktop
+    nixpkgs-pkgs.ayugram-desktop
     fd
     grim
     slurp
