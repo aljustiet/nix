@@ -100,18 +100,6 @@
     };
   };
 
-  programs.foot = {
-    enable = true;
-    settings = {
-      main = {
-        include = "/home/aljustiet/Documents/foot/themes/gruvbox-dark";
-        font = "JetBrainsMono Nerd Font:style=Regular:size=16";
-        font-bold = "JetBrainsMono Nerd Font:style=Bold:size=16";
-        font-italic = "JetBrainsMono Nerd Font:style=Italic:size=16";
-        font-bold-italic = "JetBrainsMono Nerd Font:style=Bold Italic:size=16";
-      };
-    };
-  };
   home.stateVersion = "25.05";
   #  programs.waybar = {
   #    enable = true;
