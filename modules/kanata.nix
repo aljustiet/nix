@@ -9,6 +9,6 @@
   services.kanata = {
     enable = true;
     package = pkgs.kanata-with-cmd;
-    thinkpad.configFile = "/home/aljustiet/.dotfiles/keyboard/kanata/thinkpad-niri.kbd";
+    keyboards.thinkpad.configFile = "/home/aljustiet/.dotfiles/keyboard/kanata/thinkpad-niri.kbd";
   };
 }
