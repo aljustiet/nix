@@ -4,7 +4,7 @@
   config,
   lib,
   ...
-}: 
+}:
 
 {
   boot.tmp.useTmpfs = true;
